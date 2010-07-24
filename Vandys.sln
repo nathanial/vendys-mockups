@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vandys", "Vandys\Vandys.csproj", "{c7744ba7-d962-4919-aec1-714cdd4c439c}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VandysScreens", "Vandys\VandysScreens\VandysScreens.csproj", "{5056ca29-7a73-4e6b-b4b8-dcb78d795b7d}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7744BA7-D962-4919-AEC1-714CDD4C439C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7744BA7-D962-4919-AEC1-714CDD4C439C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7744BA7-D962-4919-AEC1-714CDD4C439C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7744BA7-D962-4919-AEC1-714CDD4C439C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5056CA29-7A73-4E6B-B4B8-DCB78D795B7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5056CA29-7A73-4E6B-B4B8-DCB78D795B7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5056CA29-7A73-4E6B-B4B8-DCB78D795B7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5056CA29-7A73-4E6B-B4B8-DCB78D795B7D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

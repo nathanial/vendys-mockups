@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" SchemaVersion="2">
+  <SketchFlowGuid>d696c793-6e60-4f93-9866-796c5bbdcee0</SketchFlowGuid>
+  <StartScreen>VandysScreens.Main_Form</StartScreen>
+  <Screens>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Main_Form</ClassName>
+      <DisplayName>Main Form</DisplayName>
+      <FileName>Main_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>167</X>
+        <Y>1</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Patient_Data_Collection_Form</ClassName>
+      <DisplayName>Patient Data Collection Form</DisplayName>
+      <FileName>Patient_Data_Collection_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>345</X>
+        <Y>0</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Blood_Pressure_Test_and_Results_Form</ClassName>
+      <DisplayName>Blood Pressure Test and Results Form</DisplayName>
+      <FileName>Blood_Pressure_Test_and_Results_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>538</X>
+        <Y>1</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Vendys_Test_Form</ClassName>
+      <DisplayName>Vendys Test Form</DisplayName>
+      <FileName>Vendys_Test_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>782</X>
+        <Y>-1</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Screen_1_1</ClassName>
+      <DisplayName>Final Report Form</DisplayName>
+      <FileName>Screen_1_1.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>941</X>
+        <Y>5</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Admin_Mode</ClassName>
+      <DisplayName>Admin Mode</DisplayName>
+      <FileName>Admin_Mode.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>196</X>
+        <Y>-68</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Test_Protocol_Settings_Form</ClassName>
+      <DisplayName>Test Protocol Settings Form</DisplayName>
+      <FileName>Test_Protocol_Settings_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>380</X>
+        <Y>-69</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Screen_1_2</ClassName>
+      <DisplayName>Troubleshooting Diagnostics Form</DisplayName>
+      <FileName>Screen_1_2.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>228</X>
+        <Y>-142</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Retried_Old_Test_Results_Form</ClassName>
+      <DisplayName>Retrieve Old Test Results Form</DisplayName>
+      <FileName>Retried_Old_Test_Results_Form.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>175</X>
+        <Y>60</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
+  </Screens>
+  <Connections>
+    <Connection>
+      <Source>VandysScreens.Main_Form</Source>
+      <Target>VandysScreens.Patient_Data_Collection_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Patient_Data_Collection_Form</Source>
+      <Target>VandysScreens.Blood_Pressure_Test_and_Results_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Blood_Pressure_Test_and_Results_Form</Source>
+      <Target>VandysScreens.Vendys_Test_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Vendys_Test_Form</Source>
+      <Target>VandysScreens.Screen_1_1</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Main_Form</Source>
+      <Target>VandysScreens.Admin_Mode</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Admin_Mode</Source>
+      <Target>VandysScreens.Test_Protocol_Settings_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Admin_Mode</Source>
+      <Target>VandysScreens.Screen_1_2</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Main_Form</Source>
+      <Target>VandysScreens.Retried_Old_Test_Results_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+  </Connections>
+  <PrototypeRevision>0</PrototypeRevision>
+  <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
+  <RuntimeOptions>
+    <HideNavigation>false</HideNavigation>
+    <HideFlowGraph>false</HideFlowGraph>
+    <HideAnnotationAndInk>false</HideAnnotationAndInk>
+    <DisableInking>false</DisableInking>
+    <HideDesignTimeAnnotations>false</HideDesignTimeAnnotations>
+  </RuntimeOptions>
+  <VisualTags>
+    <VisualTag>
+      <Name>Navigation</Name>
+      <Color>FF1E2AD6</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Component</Name>
+      <Color>FF178F11</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Yellow</Name>
+      <Color>FFFEC600</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Orange</Name>
+      <Color>FFF06000</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Red</Name>
+      <Color>FFCC0202</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Violet</Name>
+      <Color>FF780099</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>Gray</Name>
+      <Color>FF6B6B6B</Color>
+    </VisualTag>
+    <VisualTag>
+      <Name>White</Name>
+      <Color>FFFFFFFF</Color>
+    </VisualTag>
+  </VisualTags>
+  <ViewState>
+    <Zoom>0.83333333333333337</Zoom>
+    <Center>
+      <X>212.36587473002143</X>
+      <Y>45</Y>
+    </Center>
+  </ViewState>
+</Data>
