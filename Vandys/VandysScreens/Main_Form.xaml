@@ -2,15 +2,33 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Main_Form_Name"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="Main_Form_Name"
 	mc:Ignorable="d"
 	x:Class="VandysScreens.Main_Form"
 	Width="640" Height="480">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<TextBlock x:Name="titleLogo" HorizontalAlignment="Stretch" Margin="192,120,192,0" Style="{DynamicResource TitleCenter-Sketch}" Text="VANDYS" VerticalAlignment="Top" Height="112" FontSize="64"/>
-		<Button Content="Admin" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
-		<Button Content="Load" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
-		<Button Content="Start Test" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
+		<TextBlock x:Name="titleLogo" HorizontalAlignment="Stretch" Margin="192,120,192,0" Style="{DynamicResource TitleCenter-Sketch}" Text="VENDYS" VerticalAlignment="Top" Height="112" FontSize="64"/>
+		<Button Content="Admin" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Admin_Mode"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Load" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Retried_Old_Test_Results_Form"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Start Test" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Patient_Data_Collection_Form"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
 	</Grid>
 </UserControl>

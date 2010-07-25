@@ -2,10 +2,62 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Test_Protocol_Settings_Form_Name"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="Test_Protocol_Settings_Form_Name"
 	mc:Ignorable="d"
 	x:Class="VandysScreens.Test_Protocol_Settings_Form"
 	Width="640" Height="480">
+	<UserControl.Resources>
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+		<DataTemplate x:Key="ItemTemplate">
+			<StackPanel>
+				<TextBlock Text="{Binding Scale}" Style="{DynamicResource BasicTextBlock-Sketch}"/>
+			</StackPanel>
+		</DataTemplate>
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Canvas Margin="96,71.757,200,56.536">
+			<Rectangle Fill="#FFF4F4F5" Stroke="Black" Height="351.707" Width="336"/>
+			<Canvas Height="174.682" Width="304" Canvas.Left="16" Canvas.Top="121.561">
+				<TextBlock Style="{DynamicResource SubtitleLeft-Sketch}" Text="Cuff"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Inflation Time" Canvas.Top="31.999"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="31.999" Width="184"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Deflation Time" Canvas.Top="56.243"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="56.243" Width="184"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Arm" Canvas.Top="130.193"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="130.194" Width="184"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Leg&#x9;" Canvas.Left="0.001" Canvas.Top="154.924"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="154.438" Width="184"/>
+				<TextBlock HorizontalAlignment="Right" Style="{DynamicResource BodyLeft-Sketch}" Text="Occlusion Pressure" Canvas.Top="82.193"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="81.706" Width="184"/>
+				<TextBlock HorizontalAlignment="Right" Style="{DynamicResource BodyLeft-Sketch}" Text="Stabilization Period&#x9;" Canvas.Top="106.437"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Canvas.Left="120" Canvas.Top="105.95" Width="184"/>
+			</Canvas>
+			<Canvas Height="100.892" Canvas.Left="16" Canvas.Top="4.244" Width="304">
+				<TextBlock Style="{DynamicResource SubtitleLeft-Sketch}" Text="Temperature"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Scale" Canvas.Top="32.16"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Stability" Canvas.Top="56.891"/>
+				<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Sampling Rate" Canvas.Top="81.135"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Width="184" Canvas.Left="120" Canvas.Top="32.16"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Width="184" Canvas.Left="120" Canvas.Top="56.404"/>
+				<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.244" Width="184" Canvas.Left="120" Canvas.Top="80.648"/>
+			</Canvas>
+		</Canvas>
+		<Button Content="Save" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
+		<Button Content="Reset" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Test_Protocol_Settings_Form"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Back" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<TextBlock HorizontalAlignment="Stretch" Margin="238.523,8,224,0" Style="{DynamicResource TitleCenter-Sketch}" Text="Settings" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
+	</Grid>
 </UserControl>

@@ -9,6 +9,8 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
+using Expression.Blend.SampleData.OldTests;
+using Expression.Blend.SampleData.TemperatureScales;
 using System;
 using System.Diagnostics;
 using System.Windows;

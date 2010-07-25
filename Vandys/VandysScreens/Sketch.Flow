@@ -18,7 +18,7 @@
     <Screen>
       <Type>Navigation</Type>
       <ClassName>VandysScreens.Patient_Data_Collection_Form</ClassName>
-      <DisplayName>Patient Data Collection Form</DisplayName>
+      <DisplayName>Patient Data Collection</DisplayName>
       <FileName>Patient_Data_Collection_Form.xaml</FileName>
       <Annotations />
       <Position>
@@ -30,7 +30,7 @@
     <Screen>
       <Type>Navigation</Type>
       <ClassName>VandysScreens.Blood_Pressure_Test_and_Results_Form</ClassName>
-      <DisplayName>Blood Pressure Test and Results Form</DisplayName>
+      <DisplayName>Blood Pressure Test</DisplayName>
       <FileName>Blood_Pressure_Test_and_Results_Form.xaml</FileName>
       <Annotations />
       <Position>
@@ -46,8 +46,8 @@
       <FileName>Vendys_Test_Form.xaml</FileName>
       <Annotations />
       <Position>
-        <X>782</X>
-        <Y>-1</Y>
+        <X>777</X>
+        <Y>2</Y>
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
@@ -78,7 +78,7 @@
     <Screen>
       <Type>Navigation</Type>
       <ClassName>VandysScreens.Test_Protocol_Settings_Form</ClassName>
-      <DisplayName>Test Protocol Settings Form</DisplayName>
+      <DisplayName>Settings</DisplayName>
       <FileName>Test_Protocol_Settings_Form.xaml</FileName>
       <Annotations />
       <Position>
@@ -90,7 +90,7 @@
     <Screen>
       <Type>Navigation</Type>
       <ClassName>VandysScreens.Screen_1_2</ClassName>
-      <DisplayName>Troubleshooting Diagnostics Form</DisplayName>
+      <DisplayName>Troubleshooting</DisplayName>
       <FileName>Screen_1_2.xaml</FileName>
       <Annotations />
       <Position>
@@ -214,10 +214,10 @@
     </VisualTag>
   </VisualTags>
   <ViewState>
-    <Zoom>0.83333333333333337</Zoom>
+    <Zoom>0.66666666666666663</Zoom>
     <Center>
-      <X>212.36587473002143</X>
-      <Y>45</Y>
+      <X>877.00318070323726</X>
+      <Y>-32.9488716108452</Y>
     </Center>
   </ViewState>
 </Data>

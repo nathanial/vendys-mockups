@@ -28,3 +28,5 @@ C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreen
 C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreens\obj\Debug\Vandys.Screens_MarkupCompile.lref
 C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreens\obj\Debug\ProjectDataSources.baml
 C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreens\obj\Debug\SampleData\OldTests\OldTests.baml
+C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreens\obj\Debug\Simple Styles.baml
+C:\Users\nathan\Documents\Expression\Blend 4\Projects\Vandys\Vandys\VandysScreens\obj\Debug\SampleData\TemperatureScales\TemperatureScales.baml
