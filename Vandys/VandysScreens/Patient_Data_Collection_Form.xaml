@@ -8,7 +8,32 @@
 	Width="640" Height="480">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<Rectangle Fill="#FFF4F4F5" Margin="96,71.757,208,61.072" Stroke="Black"/>
+		<Canvas Margin="96,71.757,208,61.072">
+			<Rectangle Fill="#FFF4F4F5" Stroke="Black" Height="347.171" Width="336"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="First Name" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="68.419" Canvas.Left="16.734" Canvas.Top="15.713"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Last Name" Height="20.945" Width="64.503" Canvas.Left="20.65" Canvas.Top="40.899"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Middle Name" Height="20.946" Width="76.311" Canvas.Left="8.842" Canvas.Top="66.084"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="15.713" Width="212.211"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="40.899" Width="212.211"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="66.085" Width="212.211"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Birthdate" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="60.414" Canvas.Left="24.739" Canvas.Top="93.811"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Gender" Height="20.945" Width="43.691" Canvas.Left="41.462" Canvas.Top="118.998"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Race" Height="20.945" Width="29.094" Canvas.Left="56.059" Canvas.Top="144.184"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="93.812" Width="212.211"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Ethnicity" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="55.606" Canvas.Left="29.547" Canvas.Top="170.146"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Phone" Height="20.946" Width="38.216" Canvas.Left="46.936" Canvas.Top="195.332"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Email" Height="20.946" Width="31.835" Canvas.Left="53.318" Canvas.Top="220.518"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="195.331" Width="212.211"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="220.518" Width="212.211"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Height" RenderTransformOrigin="0.905,1.859" Height="20.945" Width="40.132" Canvas.Left="45.021" Canvas.Top="246.48"/>
+			<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Weight" Height="20.946" Width="42.888" Canvas.Left="42.264" Canvas.Top="271.666"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="246.478" Width="212.211"/>
+			<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="114.947" Canvas.Top="271.664" Width="212.211"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.946" Canvas.Left="114.947" Canvas.Top="118.998" Width="212.211"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.946" Canvas.Left="114.947" Canvas.Top="170.146" Width="212.211"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.946" Canvas.Left="114.947" Canvas.Top="118.998" Width="212.211"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Height="20.946" Canvas.Left="114.947" Canvas.Top="145.2" Width="212.211"/>
+		</Canvas>
 		<Button Content="Next" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
@@ -23,29 +48,6 @@
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<TextBlock HorizontalAlignment="Left" Margin="112.734,87.47,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="First Name" VerticalAlignment="Top" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="68.419"/>
-		<TextBlock HorizontalAlignment="Left" Margin="116.65,112.656,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="Last Name" VerticalAlignment="Top" Height="20.945" Width="64.503"/>
-		<TextBlock HorizontalAlignment="Left" Margin="104.842,137.841,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="Middle Name" VerticalAlignment="Top" Height="20.946" Width="76.311"/>
-		<TextBox Margin="210.947,87.47,216.842,0" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Height="20.946"/>
-		<TextBox Margin="210.947,112.656,216.842,0" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Height="20.946"/>
-		<TextBox Margin="210.947,137.842,216.842,0" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Height="20.946"/>
-		<TextBlock HorizontalAlignment="Left" Margin="120.739,165.568,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="Birthdate" VerticalAlignment="Top" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="60.414"/>
-		<TextBlock HorizontalAlignment="Left" Margin="137.462,190.755,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="Gender" VerticalAlignment="Top" Height="20.945" Width="43.691"/>
-		<TextBlock HorizontalAlignment="Left" Margin="152.059,215.941,0,0" Style="{DynamicResource BodyLeft-Sketch}" Text="Race" VerticalAlignment="Top" Height="20.945" Width="29.094"/>
-		<TextBox Margin="210.947,165.569,216.842,0" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Top" Height="20.946"/>
-		<TextBlock HorizontalAlignment="Left" Margin="125.547,0,0,217.151" Style="{DynamicResource BodyLeft-Sketch}" Text="Ethnicity" RenderTransformOrigin="0.905,1.859" Height="20.946" VerticalAlignment="Bottom" Width="55.606"/>
-		<TextBlock HorizontalAlignment="Left" Margin="142.936,0,0,191.965" Style="{DynamicResource BodyLeft-Sketch}" Text="Phone" VerticalAlignment="Bottom" Height="20.946" Width="38.216"/>
-		<TextBlock HorizontalAlignment="Left" Margin="149.318,0,0,166.779" Style="{DynamicResource BodyLeft-Sketch}" Text="Email" VerticalAlignment="Bottom" Height="20.946" Width="31.835"/>
-		<TextBox Margin="210.947,0,216.842,191.966" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20.946"/>
-		<TextBox Margin="210.947,0,216.842,166.779" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20.946"/>
-		<TextBlock HorizontalAlignment="Left" Margin="141.021,0,0,140.818" Style="{DynamicResource BodyLeft-Sketch}" Text="Height" VerticalAlignment="Bottom" RenderTransformOrigin="0.905,1.859" Height="20.945" Width="40.132"/>
-		<TextBlock HorizontalAlignment="Left" Margin="138.264,0,0,115.631" Style="{DynamicResource BodyLeft-Sketch}" Text="Weight" VerticalAlignment="Bottom" Height="20.946" Width="42.888"/>
-		<TextBox Margin="210.947,0,216.842,140.819" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20.946"/>
-		<TextBox Margin="210.947,0,216.842,115.633" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" VerticalAlignment="Bottom" Height="20.946"/>
 		<TextBlock HorizontalAlignment="Stretch" Margin="238.523,8,224,0" Style="{DynamicResource TitleCenter-Sketch}" Text="Patient Data" VerticalAlignment="Top" d:LayoutOverrides="Width"/>
-		<ComboBox Margin="210.947,190.755,216.842,0" Style="{DynamicResource ComboBox-Sketch}" VerticalAlignment="Top" Height="20.946"/>
-		<ComboBox Margin="210.947,0,216.842,217.151" Style="{DynamicResource ComboBox-Sketch}" VerticalAlignment="Bottom" Height="20.946"/>
-		<ComboBox Margin="210.947,190.755,216.842,0" Style="{DynamicResource ComboBox-Sketch}" VerticalAlignment="Top" Height="20.946"/>
-		<ComboBox Margin="210.947,216.957,216.842,0" Style="{DynamicResource ComboBox-Sketch}" VerticalAlignment="Top" Height="20.946"/>
 	</Grid>
 </UserControl>

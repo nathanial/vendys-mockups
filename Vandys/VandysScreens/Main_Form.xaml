@@ -9,21 +9,21 @@
 
 	<Grid x:Name="LayoutRoot" Background="White">
 		<TextBlock x:Name="titleLogo" HorizontalAlignment="Stretch" Margin="192,120,192,0" Style="{DynamicResource TitleCenter-Sketch}" Text="VENDYS" VerticalAlignment="Top" Height="112" FontSize="64"/>
-		<Button Content="Admin" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+		<Button Content="Admin" HorizontalAlignment="Left" Margin="40,0,0,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Admin_Mode"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<Button Content="Load" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+		<Button Content="Load" Margin="256,0,248,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Retried_Old_Test_Results_Form"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
-		<Button Content="Start Test" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+		<Button Content="Test" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Patient_Data_Collection_Form"/>

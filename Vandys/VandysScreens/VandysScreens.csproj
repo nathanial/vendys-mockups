@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Expression.Controls" />
     <Reference Include="Microsoft.Expression.Drawing" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -52,7 +53,6 @@
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
-    <Reference Include="WPFToolkit" />
   </ItemGroup>
   <PropertyGroup>
     <ExpressionBlendPrototypingEnabled>true</ExpressionBlendPrototypingEnabled>
@@ -96,6 +96,9 @@
     </Compile>
     <Compile Include="Test_Protocol_Settings_Form.xaml.cs">
       <DependentUpon>Test_Protocol_Settings_Form.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Troubleshoot.xaml.cs">
+      <DependentUpon>Troubleshoot.xaml</DependentUpon>
     </Compile>
     <Compile Include="Vendys_Test_Form.xaml.cs">
       <DependentUpon>Vendys_Test_Form.xaml</DependentUpon>
@@ -153,6 +156,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Troubleshoot.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Include="Vendys_Test_Form.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -182,6 +189,9 @@
     <None Include="..\..\..\..\..\..\..\Sources\Libraries\WPFToolkit.VisualStudio.Design.dll">
       <Link>WPFToolkit.VisualStudio.Design.dll</Link>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Licenses.licx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath32)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

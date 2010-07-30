@@ -9,16 +9,50 @@
 
 	<Grid x:Name="LayoutRoot" Background="White">
 		<Grid.Resources>
-			<PointCollection x:Key="bloodPressure">1,10 2,25 3,20 4,40</PointCollection>	
+			<PointCollection x:Key="bloodPressure1">1,10 2,25 3,20 4,40</PointCollection>	
 			<PointCollection x:Key="systolic">1,111</PointCollection>
 			<PointCollection x:Key="diastolic">2,69</PointCollection>
 			<PointCollection x:Key="meanBP">3,81</PointCollection>
 			<PointCollection x:Key="pulseRate">4,72</PointCollection>
 		</Grid.Resources>
+		<VisualStateManager.VisualStateGroups>
+			<VisualStateGroup x:Name="_SketchFlowAnimation_SketchFlowAnimation" d:IsSketchFlowAnimation="True">
+				<VisualStateGroup.Transitions>
+					<VisualTransition From="holdtimes" GeneratedDuration="Automatic" To="SketchFlowAnimationFrame"/>
+					<VisualTransition GeneratedDuration="0:0:0.5" To="SketchFlowAnimationFrame"/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="holdtimes"/>
+				<VisualState x:Name="SketchFlowAnimationFrame">
+					<Storyboard>
+						<ObjectAnimationUsingKeyFrames Storyboard.TargetProperty="(chartingToolkit:Chart.Title)" Storyboard.TargetName="chart">
+							<DiscreteObjectKeyFrame KeyTime="0" Value="Foo"/>
+						</ObjectAnimationUsingKeyFrames>
+					</Storyboard>
+				</VisualState>
+				<VisualState x:Name="_SketchFlowAnimation_base">
+					<Storyboard/>
+				</VisualState>
+			</VisualStateGroup>
+			<VisualStateGroup x:Name="_SketchFlowAnimation_SketchFlowAnimation1" d:IsSketchFlowAnimation="True">
+				<VisualStateGroup.Transitions>
+					<VisualTransition GeneratedDuration="0:0:0.5" To="SketchFlowAnimationFrame1">
+						<VisualTransition.GeneratedEasingFunction>
+							<CubicEase EasingMode="EaseInOut"/>
+						</VisualTransition.GeneratedEasingFunction>
+					</VisualTransition>
+					<VisualTransition From="holdtimes1" GeneratedDuration="0:0:1" To="SketchFlowAnimationFrame1"/>
+				</VisualStateGroup.Transitions>
+				<VisualState x:Name="holdtimes1"/>
+				<VisualState x:Name="SketchFlowAnimationFrame1"/>
+				<VisualState x:Name="_SketchFlowAnimation_base1">
+					<Storyboard/>
+				</VisualState>
+			</VisualStateGroup>
+		</VisualStateManager.VisualStateGroups>
 		<Button Content="Next" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
-					<pi:NavigateForwardAction/>
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Vendys_Test_Form"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>
@@ -35,8 +69,8 @@
 			<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource meanBP}" Title="Mean BP"/>
 			<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource pulseRate}" Title="Pulse Rate"/>
 		</chartingToolkit:Chart>
-		<chartingToolkit:Chart Margin="24,32,24,0" Title="Blood Pressure" VerticalAlignment="Top" Height="192">
-			<chartingToolkit:AreaSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource bloodPressure}" Title="Pressure" Height="82.76" BorderThickness="0"/>
+		<chartingToolkit:Chart x:Name="chart" Margin="24,32,24,0" Title="Blood Pressure" VerticalAlignment="Top" Height="192">
+			<chartingToolkit:AreaSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{DynamicResource bloodPressure1}" Title="Pressure" Height="82.76" BorderThickness="0"/>
 		</chartingToolkit:Chart>
 	</Grid>
 </UserControl>

@@ -1,0 +1,53 @@
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:pc="http://schemas.microsoft.com/prototyping/2010/controls" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" mc:Ignorable="d" x:Name="Troubleshoot_Name"
+	x:Class="VandysScreens.Troubleshoot"
+	Width="640" Height="480">
+	
+	<Grid x:Name="LayoutRoot" Background="White">
+		<Rectangle Fill="#FFF4F4F5" Margin="151.437,93.614,144.563,152" Stroke="Black"/>
+
+		<Grid Margin="192,112,168.563,218.386" d:LayoutOverrides="Width, Height, GridBox">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto" />
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+				<ColumnDefinition Width="Auto" />
+			</Grid.ColumnDefinitions>
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleCenter-Sketch}" Text="Modules" VerticalAlignment="Top" Margin="0"/>
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleCenter-Sketch}" Text="Comm Port" VerticalAlignment="Top" Grid.Column="1" Margin="20,0,0,0"/>
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleCenter-Sketch}" Text="Ok?" VerticalAlignment="Top" Grid.Column="2" Margin="28.427,0,0,0"/>
+			
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleLeft-Sketch}" Text="DTM" VerticalAlignment="Top" Grid.Row="1" Margin="8,12,0,0"/>
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleLeft-Sketch}" Text="CMM" VerticalAlignment="Top" Grid.Row="2" Margin="8,11.999,0,0"/>
+			<TextBlock HorizontalAlignment="Left" Style="{DynamicResource SubtitleLeft-Sketch}" Text="NIBP" VerticalAlignment="Top" Grid.Row="3" Margin="8,12.001,0,0" Grid.RowSpan="3"/>
+		
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Width="100" Grid.Row="1" Grid.Column="1" Height="25" Margin="20,12,0,0"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Width="100" Grid.Row="2" Grid.Column="1" Height="25" Margin="20,12,0,0"/>
+			<ComboBox Style="{DynamicResource ComboBox-Sketch}" Width="100" Grid.Row="3" Grid.Column="1" Height="25" Margin="20,12,0,0"/>
+	
+			<TextBox HorizontalContentAlignment="Center" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Text="Yes" VerticalAlignment="Center" Grid.Row="2" Grid.Column="2" Margin="28.427,12,21.573,0" d:LayoutOverrides="Width"/>
+			<TextBox HorizontalContentAlignment="Center" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Text="No" VerticalAlignment="Center" Background="#FF080707" Grid.Row="3" Grid.Column="2" Margin="28.427,12,21.573,0"/>
+			<TextBox HorizontalContentAlignment="Center" Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Text="Yes" VerticalAlignment="Center" Grid.Row="1" Grid.Column="2" Margin="28.427,12,21.573,0" d:LayoutOverrides="Width"/>
+		
+	
+		</Grid>
+		<Button Content="Back" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Detect" Margin="288,0,272,170.386" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="29.614"/>
+		<Button Content="Test" Margin="0,0,176,170.386" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="29.614" HorizontalAlignment="Right" Width="80" RenderTransformOrigin="0.607,0.54"/>
+		<Button Content="Info" Margin="192,0,0,170.386" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Height="29.614" HorizontalAlignment="Left" Width="80"/>
+		<TextBlock HorizontalAlignment="Stretch" Margin="200,8,190.523,0" Style="{DynamicResource TitleCenter-Sketch}" Text="Hardware" VerticalAlignment="Top"/>
+
+	</Grid>
+</UserControl>

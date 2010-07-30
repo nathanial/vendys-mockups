@@ -2,10 +2,67 @@
 	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
 	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" x:Name="Screen_1_1_Name"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:chartingToolkit="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit" xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity" xmlns:pi="http://schemas.microsoft.com/prototyping/2010/interactivity" x:Name="Screen_1_1_Name"
 	mc:Ignorable="d"
 	x:Class="VandysScreens.Screen_1_1"
 	Width="640" Height="480">
 
-	<Grid x:Name="LayoutRoot" Background="White"/>
+	<UserControl.Resources>	
+		<PointCollection x:Key="systolic">1,111</PointCollection>
+		<PointCollection x:Key="diastolic">2,69</PointCollection>
+		<PointCollection x:Key="meanBP">3,81</PointCollection>
+		<PointCollection x:Key="pulseRate">4,72</PointCollection>
+		<PointCollection x:Key="bloodPressure1">1,10 2,25 3,20 4,40</PointCollection>	
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot" Background="White">
+		<ScrollViewer Margin="8,8,184,8" Style="{DynamicResource ScrollViewer-Sketch}">
+			<StackPanel Width="420">
+				<Canvas Height="347.171" Margin="26.5,15,17.5,0" VerticalAlignment="Bottom">
+					<Rectangle Fill="#FFF4F4F5" Stroke="Black" Height="347.171" Width="376"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="First Name" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="68.419" Canvas.Left="35.581" Canvas.Top="50.054"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Last Name" Height="20.945" Width="64.503" Canvas.Left="39.497" Canvas.Top="75.24"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Middle Name" Height="20.946" Width="76.311" Canvas.Left="27.689" Canvas.Top="100.425"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="50.054" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="75.24" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="100.426" Width="212.211"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Birthdate" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="60.414" Canvas.Left="43.586" Canvas.Top="128.152"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Gender" Height="20.945" Width="43.691" Canvas.Left="60.309" Canvas.Top="153.339"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Race" Height="20.945" Width="29.094" Canvas.Left="74.906" Canvas.Top="178.525"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="128.153" Width="212.211"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Ethnicity" RenderTransformOrigin="0.905,1.859" Height="20.946" Width="55.606" Canvas.Left="48.394" Canvas.Top="204.487"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Phone" Height="20.946" Width="38.216" Canvas.Left="65.783" Canvas.Top="229.673"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Email" Height="20.946" Width="31.835" Canvas.Left="72.165" Canvas.Top="254.859"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="229.672" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="254.859" Width="212.211"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Height" RenderTransformOrigin="0.905,1.859" Height="20.945" Width="40.132" Canvas.Left="63.868" Canvas.Top="280.821"/>
+					<TextBlock Style="{DynamicResource BodyLeft-Sketch}" Text="Weight" Height="20.946" Width="42.888" Canvas.Left="61.111" Canvas.Top="306.007"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="280.819" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="306.005" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="151.574" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="176.76" Width="212.211"/>
+					<TextBox Style="{DynamicResource TextBox-Sketch}" TextWrapping="Wrap" Height="20.946" Canvas.Left="133.794" Canvas.Top="204.487" Width="212.211"/>
+					<TextBlock Canvas.Left="8" Style="{DynamicResource SubtitleLeft-Sketch}" Text="Patient Data" Canvas.Top="8" Width="236.419"/>
+				</Canvas>
+				<chartingToolkit:Chart Title="Results" Height="192" Margin="26.5,15,17.5,0" VerticalAlignment="Top">
+					<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource systolic}" Title="Systolic"/>
+					<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource diastolic}" Title="Diastolic"/>
+					<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource meanBP}" Title="Mean BP"/>
+					<chartingToolkit:ColumnSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{StaticResource pulseRate}" Title="Pulse Rate"/>
+				</chartingToolkit:Chart>
+				<chartingToolkit:Chart x:Name="chart" Title="Blood Pressure" Height="192" Margin="26.5,15,17.5,0">
+					<chartingToolkit:AreaSeries DependentValuePath="Y" IndependentValuePath="X" ItemsSource="{DynamicResource bloodPressure1}" Title="Pressure" Height="82.76" BorderThickness="0"/>
+				</chartingToolkit:Chart>
+			</StackPanel>
+		</ScrollViewer>
+		<Button Content="Done" HorizontalAlignment="Right" Margin="0,0,8,8" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Main_Form"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Save" HorizontalAlignment="Right" Margin="0,0,8,128.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
+		<Button Content="Print" HorizontalAlignment="Right" Margin="0,0,8,176.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
+	</Grid>
 </UserControl>

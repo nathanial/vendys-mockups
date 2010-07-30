@@ -111,6 +111,18 @@
       </Position>
       <VisualTag>0</VisualTag>
     </Screen>
+    <Screen>
+      <Type>Navigation</Type>
+      <ClassName>VandysScreens.Troubleshoot</ClassName>
+      <DisplayName>Hardware</DisplayName>
+      <FileName>Troubleshoot.xaml</FileName>
+      <Annotations />
+      <Position>
+        <X>396</X>
+        <Y>-146</Y>
+      </Position>
+      <VisualTag>0</VisualTag>
+    </Screen>
   </Screens>
   <Connections>
     <Connection>
@@ -169,8 +181,29 @@
       <TransitionType>Fade</TransitionType>
       <VisualTag>0</VisualTag>
     </Connection>
+    <Connection>
+      <Source>VandysScreens.Screen_1_1</Source>
+      <Target>VandysScreens.Main_Form</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Screen_1_2</Source>
+      <Target>VandysScreens.Troubleshoot</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
+    <Connection>
+      <Source>VandysScreens.Retried_Old_Test_Results_Form</Source>
+      <Target>VandysScreens.Screen_1_1</Target>
+      <Type>Navigation</Type>
+      <TransitionType>Fade</TransitionType>
+      <VisualTag>0</VisualTag>
+    </Connection>
   </Connections>
-  <PrototypeRevision>0</PrototypeRevision>
+  <PrototypeRevision>1</PrototypeRevision>
   <BrandingText>Microsoft SketchFlow Prototype</BrandingText>
   <RuntimeOptions>
     <HideNavigation>false</HideNavigation>
@@ -216,8 +249,8 @@
   <ViewState>
     <Zoom>0.66666666666666663</Zoom>
     <Center>
-      <X>877.00318070323726</X>
-      <Y>-32.9488716108452</Y>
+      <X>877.03901403657073</X>
+      <Y>65.72388423710801</Y>
     </Center>
   </ViewState>
 </Data>

@@ -33,12 +33,25 @@
 	<Grid x:Name="LayoutRoot" Background="White" DataContext="{Binding Source={StaticResource OldTests}}">
 		<TextBlock HorizontalAlignment="Left" Margin="16,8,0,0" Style="{DynamicResource TitleLeft-Sketch}" Text="Old Tests" VerticalAlignment="Top" Width="200"/>
 		<ListBox Margin="16,61.393,256,24" Style="{DynamicResource ListBox-Sketch}" ItemTemplate="{DynamicResource ItemTemplate2}" ItemsSource="{Binding Collection}"/>
-		<Button Content="Open" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
+		<Button Content="Open" HorizontalAlignment="Right" Margin="0,0,24,168.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Screen_1_1"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
 		<Button Content="Delete" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464"/>
 		<Button Content="Back" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
 					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Export" HorizontalAlignment="Right" Margin="0,216,24,224.536" Style="{DynamicResource Button-Sketch}" Width="136">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Screen_1_1"/>
 				</i:EventTrigger>
 			</i:Interaction.Triggers>
 		</Button>

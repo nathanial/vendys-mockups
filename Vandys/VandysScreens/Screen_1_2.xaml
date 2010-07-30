@@ -8,7 +8,6 @@
 	Width="640" Height="480">
 
 	<Grid x:Name="LayoutRoot" Background="White">
-		<TextBox Margin="192,168,248,132" Style="{DynamicResource Note-Sketch}" TextWrapping="Wrap" Text="Not sure what to put here"/>
 		<Button Content="Back" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
 			<i:Interaction.Triggers>
 				<i:EventTrigger EventName="Click">
@@ -17,5 +16,19 @@
 			</i:Interaction.Triggers>
 		</Button>
 		<TextBlock HorizontalAlignment="Stretch" Margin="200,8,190.523,0" Style="{DynamicResource TitleCenter-Sketch}" Text="Troubleshooting" VerticalAlignment="Top"/>
+		<Button Content="Hardware" HorizontalAlignment="Right" Margin="0,0,24,112.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateToScreenAction TargetScreen="VandysScreens.Troubleshoot"/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
+		<Button Content="Back" HorizontalAlignment="Right" Margin="0,0,24,56.536" Style="{DynamicResource Button-Sketch}" VerticalAlignment="Bottom" Width="136" Height="39.464">
+			<i:Interaction.Triggers>
+				<i:EventTrigger EventName="Click">
+					<pi:NavigateBackAction/>
+				</i:EventTrigger>
+			</i:Interaction.Triggers>
+		</Button>
 	</Grid>
 </UserControl>
